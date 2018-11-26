@@ -14,5 +14,5 @@ print(items)
 print(len(items), 'products in total.')
 
 print('You bought these items: ')
-for i in range(2):
-	print(items[i][0], items[i][1])
+for i in items:
+	print(i[0], i[1])
