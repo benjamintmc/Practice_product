@@ -16,3 +16,8 @@ print(len(items), 'products in total.')
 print('You bought these items: ')
 for i in items:
 	print(i[0], i[1])
+
+with open('product.csv', 'w', encoding='UTF-8') as f:
+	f.write('商品,價格\n')
+	for i in items:
+		f.write(i[0] + ',' + str(i[1]) + '\n')
