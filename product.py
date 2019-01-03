@@ -23,7 +23,7 @@ if newFile == 'y':
 #	product.append(price)
 		items.append([name, price])
 	print(items)
-	print(len(items) - 1, 'products in total.')
+	print(len(items), 'products in total.')
 
 with open('product.csv', 'w', encoding='UTF-8') as f:
 	for i in items:
