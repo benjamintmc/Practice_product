@@ -1,7 +1,6 @@
 import os
-# define arrays
-item_list = []
 # define functions
+item_list = []
 def read_file(filename):
 	with open(filename, 'r', encoding='UTF-8') as f:
 		for line in f:
@@ -12,7 +11,7 @@ def read_file(filename):
 	return item_list
 def input_item(item_list):
 	while True:
-		name = input('Enter item name: (enter q to exit)')
+		name = input('Enter item name: (enter q to exit) ')
 		if name == 'q':
 			break
 		price = input('Enter price of item: ')
