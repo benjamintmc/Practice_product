@@ -49,5 +49,6 @@ def main():
             write_in_file(filename, item_list)
         print('Updated as below,')
         print(item_list)
-# run main function
-main()
+# run main 
+if __name__ == '__main__':
+    main()
